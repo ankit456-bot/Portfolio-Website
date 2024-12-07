@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav.css">
+    <title>My Education</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #000;
+            color: #fff;
+            overflow: hidden;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            position: relative;
+        }
+
+        .education {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 35px;
+        }
+
+        .edu-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 25px 25px;
+            border-radius: 8px;
+            font-size: 1.2em;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, background 0.3s;
+            width: 80%;
+            max-width: 600px;
+            margin:10px;
+        }
+
+        .edu-item:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.2);
+        }
+        .scroll-box {
+            width: auto;
+            height: auto;
+            overflow: auto;
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+    
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+        .h1{
+            color:white;
+            text-align: center;
+            margin:50px;
+            padding:50px;
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+  
+        </header>
+        
+    <div class="container">
+        
+        <div class="education">
+            <div class="edu-item">Secondary School Certificate (10th Grade)  
+                <br>Institution: DCM Senior Secondary School
+                <br>Location:Ambala Cantt,Haryana
+                <br>Board:CBSE
+                <br>Year Passed: 2022
+            
+            </div>
+            
+            <div class="edu-item">
+                Higher Secondary Certificate (12th Grade)
+                <br>Stream: Non-Medical
+                <br>Institution: DCM Senior Secondary School
+                <br>Location:Ambala Cantt,Haryana
+                <br>Board:CBSE 
+                <br>Year Passed: 2024                
+            </div>
+
+            <div class="edu-item">
+               
+                        <strong>Bachelor of Engineering (B.E)</strong><br>
+                        Specialization: Computer Science and Engineering<br>
+                        Institution: Chitkara University,Himachal Pradesh<br>
+                        Status: Currently Pursuing<br>
+                        Expected Graduation: 2028
+            </div>      
+        
+    </div>
+</div>
+</body>
+</html>

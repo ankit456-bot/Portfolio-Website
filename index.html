@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+   <link rel="stylesheet" href="nav.css">
+  </head>
+  <body>
+    <style>
+
+      
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins',sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden ;
+    background-color: black;
+    color: white;
+}
+
+header{
+    margin-top: 20px;
+    position: fixed ;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9% ;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 3rem;
+    color: #b74b4d;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.logo:hover{
+    color: #cc3427;
+    transform: scale(1.1);
+}
+
+
+section{
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-color: black;
+}
+
+.home .home-content h1{
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+span{
+    color: #b74b4d;
+}
+
+.home-content p{
+    font-size: 1.6rem;
+}
+
+.home-img{
+    border-radius: 20%;
+}
+
+.home-img img{
+    position: relative;
+    width: 20vw;
+    border-radius: 50%;
+    box-shadow: 0 0 20px solid;
+    cursor: pointer;
+    transition: 0.2s linear;
+
+}
+
+.home-img img:hover{
+    transform: scale(1.1);
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.social-icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: 0.2rem solid #b74b4d;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease;
+    color: #b74b4d;
+}
+
+.social-icons a:hover{
+    color: black;
+    transform: scale(1.3) translateY(-5px);
+    background-color: #b74b4d;
+    box-shadow: 0 0 25px #b74b4d;
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: black;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: #b74b4d;
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+    border: 2px solid #b74b4d;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover{
+    transform: scale(1.03);
+    background-color: #b74b4d;
+    color: black;
+    box-shadow: 0 0 25px #b74b4d;
+}
+
+.home-content .typewriter{
+    font-size: clamp(4rem, 3rem + 5vw, 2.5rem);
+    font-weight: 1000;
+}
+
+@media(max-width:1000px){
+    .home{
+        gap: 4rem;
+    }
+}
+
+@media(max-width:995px){
+    .home{
+        flex-direction: column;
+        margin: 5rem 4rem;
+
+    }
+    
+    .home-content h1{
+        font-size: 5rem;
+    }
+    
+    .home-img img{
+        width: 50vh;
+        margin-top: 4rem;
+    }
+
+}
+    </style>
+    <header>
+
+      <a href="" class="logo">Ankit</a>
+
+      <nav>
+        <a href="image.jpeg" class="active">Home</a>
+        <a href="https://github.com/ankit456-bot?tab=repositories">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="education.html">Education</a>
+        
+      </nav>
+    </header>
+
+    <section class="home">
+      <div class="home-img">
+        <img src="ankit2.png" alt=""/>
+      </div>
+      <div class="home-content">
+        <h1>Hi, It's <span>Ankit</span></h1>
+        <div class="typewriter">
+          I'm a <span class="typewriter-text"></span><label for="">|</label>
+                    <div class="social-icons">
+            <a href="https://www.linkedin.com/in/ankit-sharma-a7108b1b5/"><ion-icon name="logo-linkedin"></ion-icon></a>
+            <a href="https://github.com/ankit456-bot" target="_blank"
+              ><ion-icon name="logo-github"></ion-icon
+            ></a>
+            <a href="https://www.instagram.com/ankit_0478/" target="_blank"
+              ><ion-icon name="logo-instagram"></ion-icon
+            ></a>
+       
+         
+          <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=jrjtXFCLBDKPPbwtBZsQpwjvXvVzSHZVprRcGrXjHdBpRlkwFGVFgqhgqGbqKKNQLCLsRVCR" target="_blank">
+            <ion-icon name="mail"></ion-icon>
+          </a>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
